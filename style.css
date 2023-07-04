@@ -1,0 +1,566 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+:root {
+    --bg-color: #fff6f6;
+    --hover-color: #FFCCCC;
+    --active-color: #4A8FE7;
+    --call-action: #151515;
+    --heading-color: #F5FF90;
+}
+
+
+body{
+    background-color: var(--bg-color);
+    height: 100vh;
+    border: 1px solid #fff6f6;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 4rem 0 4rem;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    flex: 1;
+    transform: skew(-20deg);
+    margin: 0 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+    
+}
+.heading{
+    transform: skew(-20deg);
+    font-size: 10px;
+    background-color: var(--active-color);
+    color: white;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.socials a{
+    text-decoration: none;
+}
+.socials i{
+    font-size: 30px;
+    margin: 0 5px;
+    color: grey;
+    transform: skew(20deg);
+    transition: 0.3s ease-in-out;
+}
+.socials i:hover{
+    color: var(--hover-color);
+}
+#datetime{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: var(--call-action);
+    transform: skew(-20deg);
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
+
+
+@keyframes typing {
+    from { width: 0; }
+  }
+  
+  @keyframes blink-caret {
+    50% { border-color: transparent; }
+  }
+  
+  #typing-animation {
+    overflow: hidden; /* Ensures text doesn't overflow outside the element */
+    border-right: 0.15em solid #000; /* Creates a blinking cursor effect */
+    white-space: nowrap; /* Prevents text from wrapping */
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+    caret-color: transparent;
+
+  }
+  #typing-animation::after {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 1em;
+    margin-left: 2px;
+    background-color: black;
+  }
+  section{
+    display: flex;
+    align-items: center;
+    height: 70vh;
+    justify-content: space-between;
+    margin: 0rem 4rem 0 4rem;
+    padding: 0rem 4rem 0 4rem;
+    position: relative;
+  }
+.information{
+    width: 45%;
+}
+.information h1{
+    font-size: 30px;
+    width: fit-content;
+    font-style: italic;
+    color: var(--call-action);
+    font-weight: 700;
+    color: black;
+    opacity: 0.6;
+}
+.information h3{
+    width: fit-content;
+    letter-spacing: 0.5mm;
+    color: var(--active-color);
+    font-size: 20px;
+}
+.information p{
+    font-size: 15px;
+    opacity: 0.7;
+}
+.image{
+    object-fit: contain;
+    height: 202px;
+    border-radius: 40px;
+    transform: skew(-30deg);
+    background-color: var(--bg-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image img{
+    height: 200px;
+    width: 200px;
+    border-radius:100px;
+    transform: skew(30deg);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: rgb(238, 238, 238);
+    filter: grayscale(100%);
+
+}
+.btn{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    margin-top: 2rem;
+    color: black;
+    background-color: var(--heading-color);
+    transition: 0.5s ease-in-out;
+    transform: skew(-20deg);
+    border:1px solid var(--heading-color);
+
+}
+
+
+.btn a{
+    text-decoration: none;
+    padding-right: 20px;
+    transform: skew(20deg);
+    color: black;
+
+}
+.btn:hover{
+    border:1px solid var(--heading-color);
+    color: black;
+    background-color: white;
+    #hoverblack{
+        color: black;
+    }
+}
+.btn i{
+    font-size: 25px;
+    transform: skew(20deg);
+
+}
+.brands{
+    position: absolute;
+    bottom: 0;
+    font-size: 30px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.brands i{
+    margin: 0 10px;
+    opacity: 0.7;
+}
+footer{
+    margin: 0rem 4rem 0 4rem;
+    height: 18vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.tab{
+    position:fixed;
+    font-size: 50px;
+    padding: 15px;
+    margin-top: 1.5rem;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+    opacity: 0.8; /* Set the overall opacity of the div */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); /* Apply a box shadow for a glass-like effect */
+}
+.tab i{
+    margin: 0 20px;
+    color: grey;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+
+}
+.tab i:hover{
+    color: var(--hover-color);
+    transform: scale(1.1);
+}
+#active{
+    color: var(--active-color);
+}
+.email{
+    position: fixed;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    left: 1.5cm;
+    bottom: 3cm;
+    display: flex;
+}
+.email a{
+    color: gray;
+    font-style: italic;
+    text-decoration: none;
+    opacity: 0.5;
+}
+.email a::before{
+    content: "<-----";
+    padding-right: 5px;
+}
+.email a::after{
+    content: "----->";
+}
+.email a:hover{
+    color: #4A8FE7;
+}
+.about-me{
+    color: rgb(121, 121, 121);
+    width: 40%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+    opacity: 0.8; /* Set the overall opacity of the div */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); /* Apply a box shadow for a glass-like effect */
+
+}
+.about-me p{
+    margin-top: 20px;
+    font-size: 12px;
+    text-align: left;
+}
+.knowlege, .frameworks{
+    width: 27%;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.5); /* Set the background color with transparency */
+    opacity: 0.8; /* Set the overall opacity of the div */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.2); /* Apply a box shadow for a glass-like effect */
+    color: rgb(121, 121, 121);
+    font-size: 12px;
+
+}
+.knowlege p,.frameworks p{
+    margin-top: 20px;
+}
+.knowlege h3, .frameworks h3{
+    background-color: rgb(131, 148, 255);
+    color: white;
+    padding:0 5px;
+    font-size: 17px;
+}
+.about-me h3{
+    background-color: rgb(131, 148, 255);
+    color: white;
+    padding:0 5px;
+    font-size: 17px;
+
+
+}
+.knowlege h4, .frameworks h4{
+    color: white;
+    padding: 0 5px;
+    opacity: 0.6;
+    background-color: black;
+}
+.knowlege ul,.frameworks ul{
+    padding-left: 20px;
+}
+.projects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+    padding: 20px; /* Gap between grid items */
+    gap: 20px;
+    overflow-y: scroll;
+    max-height: 60vh;
+    margin-top: 4rem;
+
+}
+.projects::--webkit-scrollbar{
+    display: none;
+}
+.project-info{
+    font-size: 12px;
+    display: flex;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2),
+    0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 2;
+    background-color: var(--bg-color);
+    color: black;
+}
+.project-info:hover{
+    .hide-hover{
+        visibility: visible;
+    }
+}
+.skew{
+    transform-origin: right;
+    position: relative;
+    max-width: 500px;
+    box-sizing: border-box;
+    opacity: 0.8;
+
+}
+.skew p{
+    padding: 10px;
+    
+    
+}
+.skew span{
+    font-size: 20px; font-weight: 700; background-color: rgb(139, 139, 139); color: white;
+}
+.p-image{
+    max-height: 200px;
+    object-fit: contain;
+
+}
+.p-image img{
+    width: 200px;
+    height: 200px;
+    
+}
+.hide-hover{
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.9); /* Set the background color with transparency */
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1); /* Apply a box shadow for a glass-like effect */
+    transition: 0.1s ease-in-out;
+    visibility: hidden;
+
+}
+.hide-hover button{
+    height: 40px;
+    width: 130px;
+    margin: 0 10px;
+    background-color: var(--heading-color);
+    border: 1px solid var(--heading-color);
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 400;
+}
+.hide-hover button:hover{
+    background-color: white;
+    
+}
+::-webkit-scrollbar {
+    width: 0.5em;
+  }
+
+  .experience{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .job{
+    margin: 1rem 0;
+  }
+
+  @media (min-width: 1024px) {
+    .email{
+        bottom:1cm;
+        
+    }
+    .brands{
+       
+        font-size: 25px;
+    }
+    .brands i{
+        margin: 0 5px;
+        
+    }
+    .tab{
+        font-size: 40px;
+        padding: 15px;
+        margin-top: 1.9rem;
+       
+    }
+    .information h1{
+        font-size: 25px;
+
+    }
+    .information h3{
+
+        font-size: 18px;
+    }
+    .information p{
+        font-size: 14px;
+
+    }
+    #typing-animation {
+        font-size: 15px;
+    
+      }
+      .information{
+        width: 50%;
+    }
+
+    .heading{
+        font-size: 8px;
+       
+    }
+    
+
+    .socials i{
+        font-size: 25px;
+        
+    }
+}
+@media (max-width: 768px) {
+    .email{
+        bottom:1cm;
+        
+    }
+    .brands{
+       
+        font-size: 20px;
+    }
+    .brands i{
+        margin: 0 5px;
+        
+    }
+    .tab{
+        font-size: 30px;
+        padding: 15px;
+        margin-top: 1.9rem;
+       
+    }
+    .information h1{
+        font-size: 20px;
+
+    }
+    .information h3{
+
+        font-size: 16px;
+    }
+    .information p{
+        font-size: 12px;
+
+    }
+    #typing-animation {
+        font-size: 14px;
+    
+      }
+      .information{
+        width: 50%;
+    }
+
+    .heading{
+        font-size: 8px;
+       
+    }
+    
+
+    .socials i{
+        font-size: 22px;
+        
+    }
+
+    .image{
+        height: 172px;
+    }
+    
+    .image img{
+        height: 170px;
+        width: 170px;
+    }
+    .btn{
+
+        padding: 4px 30px;
+        margin-top: 1rem;
+        font-size: 12px;
+    }
+    #datetime{
+    font-size: 12px;
+    
+    }
+    .about-me{
+        color: rgb(121, 121, 121);
+        width: 70%;
+        font-size: 10px;
+        background-color: var(--bg-color);
+        box-shadow: none;
+        overflow-y: scroll;
+    }
+    
+    .knowlege, .frameworks{
+        width: 30%;
+        font-size: 10px;
+        box-shadow: none;
+        background-color: var(--bg-color);
+
+    }
+
+
+    .experience{
+        font-size: 12px;
+
+      }
+    .p-image{
+        max-height: 170px;
+    
+    }
+    .p-image img{
+        width: 140px;
+        height: 170px;
+    
+}
+.project-info{
+    height: fit-content;
+}
+.skew span{
+    font-size: 14px;
+}
+.skew{
+    width: 170px;
+}
+.hide-hover button{
+
+    font-size: 10px;
+}
+}
